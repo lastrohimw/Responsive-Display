@@ -1,0 +1,131 @@
+/*
+*	Responsive Display
+*	Version 0.1
+*	Author : Rohim Wahyudin;
+*/
+
+
+/*
+*	Default
+*/
+.show-on-xs,
+.show-on-sm,
+.show-on-md,
+.show-on-lg,
+.show-on-xl,
+.show-on-sm-and-down,
+.show-on-md-and-up,
+.show-on-md-and-down,
+.show-on-lg-and-up,
+.hide {
+	display: none;
+}
+
+
+.hide-on-xs,
+.hide-on-sm,
+.hide-on-md,
+.hide-on-lg,
+.hide-on-xl,
+.hide-on-sm-and-down,
+.hide-on-md-and-up,
+.hide-on-md-and-down,
+.hide-on-lg-and-up,
+.show {
+	display: block;
+}
+
+
+
+/*
+*	Extra Small Screen < 576px
+*/
+@media screen and (max-width: 575px) {
+	.show-on-xs,
+	.show-on-sm-and-down,
+	.show-on-md-and-down {
+		display: block;
+	}
+
+	.hide-on-xs,
+	.hide-on-sm-and-down,
+	.hide-on-md-and-down {
+		display: none;
+	}
+}
+
+
+
+/*
+*	Small Screen >= 576px
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.show-on-sm,
+	.show-on-sm-and-down,
+	.show-on-md-and-down {
+		display: block;
+	}
+
+	.hide-on-sm,
+	.hide-on-sm-and-down,
+	.hide-on-md-and-down {
+		display: none;
+	}
+}
+
+
+
+/*
+*	Medium Screen >= 768px
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.show-on-md,
+	.show-on-md-and-down,
+	.show-on-md-and-up {
+		display: block;
+	}
+
+	.hide-on-md,
+	.hide-on-md-and-down,
+	.hide-on-md-and-up {
+		display: none;
+	}
+}
+
+
+
+/*
+*	Large Screen >= 992px
+*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.show-on-lg,
+	.show-on-md-and-up,
+	.show-on-lg-and-up {
+		display: block;
+	}
+
+	.hide-on-lg,
+	.hide-on-md-and-up,
+	.hide-on-lg-and-up {
+		display: none;
+	}
+}
+
+
+
+/*
+*	Extra Large Screen >= 1200px
+*/
+@media screen and (min-width: 1200px) {
+	.show-on-xl,
+	.show-on-md-and-up,
+	.show-on-lg-and-up {
+		display: block;
+	}
+
+	.hide-on-xl,
+	.hide-on-md-and-up,
+	.hide-on-lg-and-up {
+		display: none;
+	}
+}
